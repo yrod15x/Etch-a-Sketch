@@ -1,0 +1,32 @@
+main
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .contenedor
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .bloques
+        {
+            width: 6dvw;
+            height: 6dvh;
+            background: hotpink;
+            /*Realizar el efecto de cola cambiando la opacidad de los bloques*/
+            opacity: 0;
+            transition: opacity 2s ease 0.4s, transform 0.8s ease;
+            transform: scale(1);
+        }
+        /* Cambiar la trancisión y opacidad de los bloques al pasar el cursor*/
+        .bloques:hover
+        {
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        transform: scale(1);
+        }
+        
+    }
+}

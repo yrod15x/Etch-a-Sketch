@@ -1,0 +1,28 @@
+@charset "UTF-8";
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+main .contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* Cambiar la trancisión y opacidad de los bloques al pasar el cursor*/
+}
+main .contenedor .bloques {
+  width: 6dvw;
+  height: 6dvh;
+  background: hotpink;
+  /*Realizar el efecto de cola cambiando la opacidad de los bloques*/
+  opacity: 0;
+  transition: opacity 2s ease 0.4s, transform 0.8s ease;
+  transform: scale(1);
+}
+main .contenedor .bloques:hover {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  transform: scale(1);
+}/*# sourceMappingURL=stylos.css.map */
