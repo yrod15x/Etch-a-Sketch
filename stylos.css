@@ -5,6 +5,12 @@ main {
   justify-content: center;
   align-items: center;
 }
+main .boton {
+  width: 10dvw;
+  height: 5dvh;
+  margin: 2dvh 0;
+  font-size: 1dvw;
+}
 main .contenedor {
   display: flex;
   justify-content: center;
@@ -13,8 +19,6 @@ main .contenedor {
   /* Cambiar la trancisión y opacidad de los bloques al pasar el cursor*/
 }
 main .contenedor .bloques {
-  width: 6dvw;
-  height: 6dvh;
   background: hotpink;
   /*Realizar el efecto de cola cambiando la opacidad de los bloques*/
   opacity: 0;

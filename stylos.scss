@@ -4,16 +4,22 @@ main
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    .boton
+    {
+        width: 10dvw;
+        height: 5dvh;
+        margin: 2dvh 0;
+        font-size: 1dvw;      
+    }
     .contenedor
     {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        
         .bloques
         {
-            width: 6dvw;
-            height: 6dvh;
             background: hotpink;
             /*Realizar el efecto de cola cambiando la opacidad de los bloques*/
             opacity: 0;
